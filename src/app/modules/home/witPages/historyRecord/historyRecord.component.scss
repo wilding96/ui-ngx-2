@@ -1,0 +1,105 @@
+/*
+ * @Author: Dylan
+ * @Date:   2021-03-08 14:48:29
+ * @Last Modified by:   Dylan
+ * @Last Modified time: 2021-03-09 11:01:04
+ */
+.historyRecordClass {
+  padding: 16px;
+
+  .img {
+    img {
+      width: 100px;
+    }
+  }
+
+  .mat-header-row {
+    background-color: #ececec;
+  }
+
+  .chartsClass {
+    margin-top: 20px;
+    background: #fff;
+  }
+
+  .recordChart {
+    display: flex;
+    justify-content: space-around;
+
+
+    .kpiBox {
+      flex-basis: 40%;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .kpiTitle {
+        font-size: 18px;
+        font-weight: bold;;
+      }
+
+      .flexDiv {
+        margin-top: 100px;
+        display: flex;
+
+        .l_ {
+          border: 1px solid #c0c0c0;
+          width: 270px;
+          height: 270px;
+          font-size: 26px;
+          position: relative;
+          .ring {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            // background: -webkit-radial-gradient( circle closest-side,#fff 90%,green 10%);
+          }
+          .ringText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            font-weight: bold;
+            p {
+              margin: 0;
+              font-size: 30px;
+              text-align: center;
+            }
+          }
+        }
+
+        .r_ {
+          border: none;
+          .r_list {
+            border: 1px solid #c0c0c0;
+            width: 270px;
+            height: 90px;
+            padding: 0 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 18px;
+            font-weight: lighter;
+            .dynamic_num {
+              font-size: 28px;
+              font-weight: bold;
+              padding: 10px 25px;
+              border-radius: 50px;
+              background: green;
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    .echartBox {
+      flex-basis: 60%;
+    }
+  }
+}

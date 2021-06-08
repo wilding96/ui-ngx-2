@@ -1,0 +1,384 @@
+{
+  "title": "Smart energy monitoring",
+  "image": null,
+  "configuration": {
+    "widgets": {
+      "ba61cc92-ef44-850b-a53c-75e7a46decf4": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 20,
+        "sizeY": 10,
+        "config": {
+          "datasources": [{
+              "type": "entity",
+              "dataKeys": [{
+                "name": "voltage",
+                "type": "timeseries",
+                "label": "Smart Meter A",
+                "color": "#2196f3",
+                "settings": {
+                  "showLines": true,
+                  "fillLines": false,
+                  "showPoints": false
+                },
+                "_hash": 0.3799791036684894
+              }],
+              "name": "Smart Meter A",
+              "entityAliasId": "f6bd11cc-beed-46c7-d972-672e7dddb5da"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [{
+                "name": "voltage",
+                "type": "timeseries",
+                "label": "Smart Meter B",
+                "color": "#4caf50",
+                "settings": {
+                  "showLines": true,
+                  "fillLines": false,
+                  "showPoints": false
+                },
+                "_hash": 0.6957840671866848
+              }],
+              "name": "Smart Meter B",
+              "entityAliasId": "dd8154f4-08cc-f620-e4db-dd4491c65b8a"
+            },
+            {
+              "type": "entity",
+              "dataKeys": [{
+                "name": "voltage",
+                "type": "timeseries",
+                "label": "Smart Meter C",
+                "color": "#f44336",
+                "settings": {
+                  "showLines": true,
+                  "fillLines": false,
+                  "showPoints": false
+                },
+                "_hash": 0.8862574406235089
+              }],
+              "name": "Smart Meter C",
+              "entityAliasId": "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5"
+            }
+          ],
+          "timewindow": {
+            "realtime": {
+              "timewindowMs": 60000
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgba(0, 0, 1, 0.04)",
+          "color": "rgb(255, 254, 254)",
+          "padding": "8px",
+          "settings": {
+            "fontColor": "#ffffff",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#ffffff"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#ffffff",
+              "title": "Voltage, V",
+              "titleAngle": 90
+            },
+            "grid": {
+              "color": "#ffffff",
+              "tickColor": "rgba(255, 255, 255, 0.05)",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0
+            },
+            "shadowSize": 8,
+            "stack": false
+          },
+          "title": "Voltage",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.87"
+          },
+          "mobileOrder": 3,
+          "mobileHeight": 4,
+          "units": "V",
+          "decimals": 2,
+          "useDashboardTimewindow": true,
+          "showLegend": true,
+          "legendConfig": {
+            "position": "bottom",
+            "showMin": true,
+            "showMax": true,
+            "showAvg": true,
+            "showTotal": false
+          }
+        },
+        "row": 13,
+        "col": 0,
+        "id": "ba61cc92-ef44-850b-a53c-75e7a46decf4"
+      }
+    },
+    "timewindow": {
+      "displayValue": "",
+      "selectedTab": 0,
+      "realtime": {
+        "interval": 1000,
+        "timewindowMs": 60000
+      },
+      "history": {
+        "historyType": 0,
+        "interval": 1000,
+        "timewindowMs": 60000,
+        "fixedTimewindow": {
+          "startTimeMs": 1488472150778,
+          "endTimeMs": 1488558550778
+        }
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 200
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Smart energy monitoring",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "e4e4d525-43ef-41c5-039a-bb0c9092148a": {
+                "sizeX": 50,
+                "sizeY": 3,
+                "row": 0,
+                "col": 0,
+                "mobileHeight": 3,
+                "mobileOrder": 0
+              },
+              "6474e85d-1207-ed4e-b60b-6d88bd4354e7": {
+                "sizeX": 20,
+                "sizeY": 10,
+                "row": 3,
+                "col": 0,
+                "mobileHeight": 5,
+                "mobileOrder": 1
+              },
+              "36022029-3417-8677-b555-0cd334bb5b6a": {
+                "sizeX": 10,
+                "sizeY": 10,
+                "row": 3,
+                "col": 20,
+                "mobileHeight": 4,
+                "mobileOrder": 2
+              },
+              "ba61cc92-ef44-850b-a53c-75e7a46decf4": {
+                "sizeX": 20,
+                "sizeY": 10,
+                "row": 13,
+                "col": 0,
+                "mobileHeight": 4,
+                "mobileOrder": 3
+              },
+              "d7b1e19b-8241-b1da-f5df-e8882e6d0c0c": {
+                "sizeX": 20,
+                "sizeY": 10,
+                "row": 3,
+                "col": 30,
+                "mobileHeight": 4,
+                "mobileOrder": 4
+              },
+              "5b2192ca-0586-7a31-1fc8-aca1a85d8a96": {
+                "sizeX": 10,
+                "sizeY": 2,
+                "row": 13,
+                "col": 20,
+                "mobileHeight": 1,
+                "mobileOrder": 5
+              },
+              "fb451b81-334c-a039-d317-16d7f68c989e": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 15,
+                "col": 20,
+                "mobileHeight": 4,
+                "mobileOrder": 6
+              },
+              "fd2237b9-8927-4be9-43c4-9a75723c3f07": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 15,
+                "col": 23,
+                "mobileHeight": 4,
+                "mobileOrder": 7
+              },
+              "4a26ce29-ab18-69ad-24f2-cfbd622a42a1": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 15,
+                "col": 26,
+                "mobileHeight": 4,
+                "mobileOrder": 8
+              },
+              "7faa8b82-4600-e9cb-6884-f3fd54603b4a": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 19,
+                "col": 26,
+                "mobileHeight": 4,
+                "mobileOrder": 9
+              },
+              "33746cd2-2201-0abf-c163-7aeeab07c8ac": {
+                "sizeX": 10,
+                "sizeY": 2,
+                "row": 13,
+                "col": 30,
+                "mobileHeight": 1,
+                "mobileOrder": 10
+              },
+              "77e85f3d-9c3d-1ca9-d80e-0a15376213e7": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 15,
+                "col": 30,
+                "mobileHeight": 4,
+                "mobileOrder": 11
+              },
+              "f78891d7-fd3d-39d4-03a4-8ac3d60f275c": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 15,
+                "col": 33,
+                "mobileHeight": 4,
+                "mobileOrder": 12
+              },
+              "ef1eb053-9b40-5244-573c-0707f2fc3b5e": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 15,
+                "col": 36,
+                "mobileHeight": 4,
+                "mobileOrder": 13
+              },
+              "4c31c7a8-cf6c-a920-59a2-b942056b06a4": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 19,
+                "col": 36,
+                "mobileHeight": 4,
+                "mobileOrder": 14
+              },
+              "d1004dbe-d8cc-ff93-8e15-06da5a6b8e3e": {
+                "sizeX": 10,
+                "sizeY": 2,
+                "row": 13,
+                "col": 40,
+                "mobileHeight": 1,
+                "mobileOrder": 15
+              },
+              "fbfcee0a-8408-2719-d3a3-a54fb3cc0741": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 15,
+                "col": 40,
+                "mobileHeight": 4,
+                "mobileOrder": 16
+              },
+              "e62ea3c5-0594-9056-1584-2a68fdfd5433": {
+                "sizeX": 3,
+                "sizeY": 8,
+                "row": 15,
+                "col": 43,
+                "mobileHeight": 4,
+                "mobileOrder": 17
+              },
+              "500ac11e-3a3a-c28d-5aed-35f2a1a65e13": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 15,
+                "col": 46,
+                "mobileHeight": 4,
+                "mobileOrder": 18
+              },
+              "d080b293-ba48-fb5b-737b-d39cc92d08ab": {
+                "sizeX": 4,
+                "sizeY": 4,
+                "row": 19,
+                "col": 46,
+                "mobileHeight": 4,
+                "mobileOrder": 19
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "rgb(20, 37, 81)",
+              "columns": 50,
+              "backgroundImageUrl": "data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnODY5MCIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iODMuNzg1bW0iIHdpZHRoPSIxNjkuMzNtbSIgdmVyc2lvbj0iMS4xIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDU5OS45OTk5OCAyOTYuODc1IiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iPgogPGRlZnMgaWQ9ImRlZnM4NjkyIj4KICA8cmFkaWFsR3JhZGllbnQgaWQ9InJhZGlhbEdyYWRpZW50OTI0OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN5PSI4MDguMjciIGN4PSItODQ0LjI5IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEuMTQxMyAtLjAxMjgzMSAuMDA3ODM0NCAuNjk2ODUgMTEyLjk1IDIzMS4yOCkiIHI9IjMwMCI+CiAgIDxzdG9wIGlkPSJzdG9wOTI0MiIgc3RvcC1jb2xvcj0iIzFjMzA2NyIgb2Zmc2V0PSIwIi8+CiAgIDxzdG9wIGlkPSJzdG9wOTI0NCIgc3RvcC1jb2xvcj0iIzEwMjA0NyIgb2Zmc2V0PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KIDwvZGVmcz4KIDxnIGlkPSJsYXllcjIiPgogIDxyZWN0IGlkPSJyZWN0OTIzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTE0MCAtNjU0LjA2KSIgaGVpZ2h0PSIyOTYuODgiIHdpZHRoPSI2MDAiIHk9IjY1NC4wNiIgeD0iLTExNDAiIGZpbGw9InVybCgjcmFkaWFsR3JhZGllbnQ5MjQ4KSIvPgogPC9nPgo8L3N2Zz4K",
+              "backgroundSizeMode": "cover",
+              "color": "rgba(0,0,0,0.870588)",
+              "autoFillHeight": true,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70,
+              "margin": 5
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "f6bd11cc-beed-46c7-d972-672e7dddb5da": {
+        "id": "f6bd11cc-beed-46c7-d972-672e7dddb5da",
+        "alias": "Smart Meter A",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": false,
+          "entityType": "DEVICE",
+          "entityList": [
+            "78c6c8a0-f2b3-11e6-a9ac-bb0136cc33d0"
+          ]
+        }
+      },
+      "dd8154f4-08cc-f620-e4db-dd4491c65b8a": {
+        "id": "dd8154f4-08cc-f620-e4db-dd4491c65b8a",
+        "alias": "Smart Meter B",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "7cfe57d0-f2b3-11e6-a9ac-bb0136cc33d0"
+          ]
+        }
+      },
+      "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5": {
+        "id": "b96327b4-e4ba-f4a6-e0e0-0eec6cf15da5",
+        "alias": "Smart Meter C",
+        "filter": {
+          "type": "entityList",
+          "entityType": "DEVICE",
+          "resolveMultiple": false,
+          "entityList": [
+            "80de2a10-f2b3-11e6-a9ac-bb0136cc33d0"
+          ]
+        }
+      }
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": false,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true,
+      "titleColor": "rgba(255, 254, 254, 0.87)",
+      "showFilters": true,
+      "showDashboardLogo": true,
+      "dashboardLogoUrl": null
+    },
+    "filters": {}
+  },
+  "name": "Smart energy monitoring"
+}

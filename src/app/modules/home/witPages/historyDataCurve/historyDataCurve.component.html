@@ -1,0 +1,42 @@
+<!-- 
+  @Author: Dylan
+  @Date:   2021-03-08 14:21:02
+  @Last Modified by:   Dylan
+  @Last Modified time: 2021-03-10 11:22:20
+-->
+<div class="historyDataCurveClass">
+  <mat-toolbar class="mat-table-toolbar">
+    <span>某一工艺参数的历史数据曲线</span>
+  </mat-toolbar>
+  <mat-toolbar class="mat-table-toolbar" *ngIf="deviceInfo && deviceInfo.deviceName">
+    <span>{{deviceInfo.deviceName}}</span>
+  </mat-toolbar>
+  <div class="infoClass">
+    <div class="infoImg">
+      <img src="../../../../../assets/imgs/machineImg.jpg" alt="">
+    </div>
+    <ul class="infoList" *ngIf="deviceInfo">
+      <li><span>型号：</span>{{deviceInfo.model}}</li>
+      <li><span>说明：</span>{{deviceInfo.description}}</li>
+      <li><span>位置：</span>{{deviceInfo.location}}</li>
+    </ul>
+  </div>
+  <mat-card class="propertyClass">
+    <mat-card-header>
+      <mat-card-title>监控的属性</mat-card-title>
+      <mat-card-subtitle *ngIf="deviceAttributes">第1~{{deviceAttributes.length}}个属性，共{{deviceAttributes.length}}个</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content class="proFlexBox" *ngFor="let item of deviceAttributes; let i = index">
+      <ul class="textLeft">
+        <li><span>属性名称</span> <span>{{item.name}}</span></li>
+        <li><span>当前值</span> <span>{{item.currentValue}}</span></li>
+        <!-- <li><span>单位</span>{{deviceInfo.location}}</li> -->
+        <li><span>上次更新时间</span> <span>{{item.currentTime}}</span></li>
+        <li><span>质量</span> <span>{{item.quality}}</span></li>
+      </ul>
+      <div class="echartRight">
+        <div class="echart" id="echart{{i}}">{{i}}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

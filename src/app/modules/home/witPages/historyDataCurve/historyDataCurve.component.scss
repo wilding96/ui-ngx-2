@@ -1,0 +1,65 @@
+/*
+ * @Author: Dylan
+ * @Date:   2021-03-09 11:03:03
+ * @Last Modified by:   Dylan
+ * @Last Modified time: 2021-03-10 11:30:50
+ */
+
+@import '../../../../../scss/reset.scss';
+
+.historyDataCurveClass {
+  padding: 16px;
+
+  .infoClass {
+    display: flex;
+    background: #fff;
+    .infoImg {
+      width: 20%;
+      margin-left: 50px;
+      img {
+        width: 150px;
+      }
+    }
+    .infoList {
+      width: 60%;
+      line-height: 40px;
+      font-size: 22px;
+      span {
+        font-weight: bold;
+        margin-right: 40px;
+      }
+      >li:not(:first-child) {
+        border-top: 1px solid #555;
+      }
+    }
+  }
+
+  .propertyClass {
+    margin-top: 20px;
+    .proFlexBox {
+      display: flex;
+      margin-top: 20px;
+      .textLeft {
+        width: 15%;
+        margin: 20px;
+        line-height: 45px;
+        font-size: 20px;
+        >li{
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #999;
+          span:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+      .echartRight {
+        flex-basis: 60%;
+        .echart {
+          width: 100%;
+          min-height: 300px;
+        }
+      }
+    }
+  }
+}
